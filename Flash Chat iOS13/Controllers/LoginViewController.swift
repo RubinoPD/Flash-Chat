@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
                     print(e)
                 } else {
                     // Navigate to the Login viewcontroller.
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }
