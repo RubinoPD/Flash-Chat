@@ -14,8 +14,8 @@
             filePath = "Flash Chat iOS13/Controllers/ChatViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "logOutPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
