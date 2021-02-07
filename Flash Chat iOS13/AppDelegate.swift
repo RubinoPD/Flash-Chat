@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  Flash Chat iOS13
-//
-//  Created by Angela Yu on 21/10/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
-//
-
 import UIKit
 import Firebase
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +8,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         FirebaseApp.configure()
         
         let db = Firestore.firestore()
+        
+        // Taken from the documentation of IQKeyboardManagerSwift
+        
+        IQKeyboardManager.shared.enable = true // Enables the input field to go up together with the keyboard.
+        IQKeyboardManager.shared.enableAutoToolbar = false // Disables extra layer of toolbar which says "Done".
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true // Hides keyboard when pressed anywhere outside of it.
         
         return true
     }
